@@ -1,0 +1,147 @@
+@import "./styles.scss";
+
+.about {
+ padding: 90px 16px 16px 16px;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ justify-items: center;
+ color: white;
+ align-items: center;
+
+ @media (min-width: 992px){
+   display: flex;
+   margin: 0;
+   flex-direction: row;
+   justify-content: space-between;
+   gap: 50px;
+
+ }
+ 
+  &-image { 
+    max-width: 328px;
+    height: 401px;
+    margin-top: 32px;
+    margin-bottom: 24px;
+    border-radius: 8px;
+
+    @media (min-width: 992px){
+     max-height: 547px;
+     max-width: 448px;  
+   
+    }
+ }
+
+ &-title {
+
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 40px;
+    letter-spacing: 0.25px;
+    text-align: left;
+    margin: 0;
+    
+    @media (min-width: 992px){
+        font-weight: 700;
+        font-size: 60px;
+        line-height: 71px;
+        letter-spacing: -0.5px;
+        text-align: center;  
+    }
+ }
+
+ &-description{
+
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 400;
+    letter-spacing: 0.44px;
+    margin-top: 24px;
+    text-align: column;
+
+    @media (min-width: 992px){
+        max-width: 568px;
+        text-align: justify;
+    }
+
+ }
+
+}
+
+.skills{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    align-items: center;
+    margin-bottom: 128px;
+
+    &-title{
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 32px;
+
+        @media (min-width: 992px){ 
+            width: 314px;
+            font-weight: 500;
+            font-size: 34px;
+            line-height: 40px;
+            height: 40px;
+            letter-spacing: 0.25px;
+            margin-top: 128px;
+        }
+    }
+
+    &-cards{
+        display: flex;
+        flex-direction: column;
+        gap:24px;
+
+        @media (min-width: 992px){
+            max-width: 1142px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            margin: 0;
+            justify-items: center;
+   
+           }
+       
+    }
+
+    &-tarjeta{
+        display: flex;
+        max-width: 330px;
+        flex-direction: column;
+        background-color: $colorRellenos;
+        border-radius: 8px;
+        padding: 16px;
+    
+        @media (min-width: 992px){
+          
+            max-width: 364.21px;
+            height: 298px;
+            padding: 24px;
+            gap: 10px;
+            
+           }
+    }
+
+    &-tarjeta-title{
+     font-weight: 500;
+     font-size: 20px;
+     line-height: 24px;
+     letter-spacing: 0.15px;
+     margin: 0;
+     margin-top: 17px;
+
+    }
+
+    &-tarjeta-about{
+     font-weight: 400;
+     font-size: 14px;
+     line-height: 20px;
+     letter-spacing: 0.25px;
+    }
+
+
+}
